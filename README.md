@@ -11,3 +11,6 @@ Restaurant Tycoon 2
 
 Prison Life
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/prisonlife'))()```
+
+Pet Simulator X
+```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/psx'))()```
