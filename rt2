@@ -1,0 +1,49 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Subscribed ";
+                Text = "Youtube:ZeytreZz https://youtube.com/@ZeytreZz";
+                Duration = 10000.5;})
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/GdN5iRbt"))() 
+local Window = Library.CreateLib("ZeytreZz Hub", "BloodTheme") 
+
+--Hi
+
+local Tab1 = Window:NewTab("Restaurant Tycoon 2")
+local Tab1Section = Tab1:NewSection("Restaurant Tycoon 2")
+local Tab2Section = Tab1:NewSection("Youtube")
+
+ --
+
+Tab1Section:NewButton("Automatic cooking on ", "If you press this button you will automatically cook really fast", function()
+ game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Credits";
+                Text = "Modified By Youtube:ZeytreZz https://youtube.com/@ZeytreZz";
+                Duration = 1.5;
+            })
+local Cooking = game.Players.LocalPlayer.PlayerScripts.CookingNew local CookProgress = require(Cooking.CookProgress) local MultiClick = require(Cooking.InputDetectors.MultiClick) local MouseMovement = require(Cooking.InputDetectors.MouseMovement) local MouseSpin = require(Cooking.InputDetectors.MouseSpin) local run = CookProgress.run CookProgress.run = function(...) local ARGS = {...} ARGS[3] = 0 return run(unpack(ARGS)) end MultiClick.start = function(...) local ARGS = {...} ARGS[3]() end MouseMovement.start = function(...) local ARGS = {...} ARGS[3]() end MouseSpin.start = function(...) local ARGS = {...} ARGS[3]() end
+
+end)
+
+Tab1Section:NewButton("Restaurant Tycoon 2 Script Hub", "If you press this you will get a Restaurant Tycoon 2 script", function()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Credits";
+                Text = "Modified By Youtube:ZeytreZz https://youtube.com/@ZeytreZz";
+                Duration = 1.5;})
+loadstring(game:HttpGet("https://pastebin.com/raw/uAZf15LR"))()
+
+end)
+
+Tab2Section:NewButton("Youtube:https://youtube.com/@ZeytreZz", "Subscribe to ZeytreZz on Youtube", function()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Credits";
+                Text = "Modified By Youtube:ZeytreZz https://youtube.com/@ZeytreZz";
+                Duration = 1.5;})
+                
+end)
+
+Tab2Section:NewButton("Youtube:ZeytreZz", "Subscribe to ZeytreZz on YouTube", function()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Credits";
+                Text = "Modified By Youtube:ZeytreZz https://youtube.com/@ZeytreZz";
+                Duration = 1.5;})
+                
+end)
