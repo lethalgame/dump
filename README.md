@@ -8,3 +8,6 @@ Arsenal
 
 Restaurant Tycoon 2
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/rt2'))()```
+
+Prison Life
+```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/prisonlife'))()```
