@@ -21,9 +21,6 @@ Chaos
 Randomizer
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/randomizer'))()```
 
-My Restaurant
-```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/myrestaurant'))()```
-
 # Soggyware
 Script for a lot of games
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/soggyware'))()```
