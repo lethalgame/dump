@@ -1,7 +1,7 @@
 # Scripts List
 
-*Zombie Rush*
+Zombie Rush
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/zombierush'))()```
 
-*Arsenal*
+Arsenal
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/arsenal'))()```
