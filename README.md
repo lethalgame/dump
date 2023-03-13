@@ -14,3 +14,6 @@ Prison Life
 
 Pet Simulator X
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/psx'))()```
+
+Chaos
+```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/chaos'))()```
