@@ -18,6 +18,9 @@ Pet Simulator X
 Chaos
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/chaos'))()```
 
+Randomizer
+```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/randomizer'))()```
+
 Script for a lot of games
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/soggyware'))()```
 
