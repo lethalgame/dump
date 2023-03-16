@@ -28,3 +28,5 @@ Script for a lot of games
 How to get key : https://soggy-ware.cf/assets/js/key.js
 
 How to find key : In the second line of code, after the first &&
+
+--Keep in mind im dead
