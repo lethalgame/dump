@@ -23,7 +23,7 @@ Randomizer
 
 # Universal Admin
 
-```loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()```
+Works in any game! ```loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()```
 
 # Soggyware
 Script for a lot of games
