@@ -21,6 +21,10 @@ Chaos
 Randomizer
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/randomizer'))()```
 
+# Universal Admin
+
+```loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()```
+
 # Soggyware
 Script for a lot of games
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/soggyware'))()```
