@@ -35,3 +35,7 @@ Script for a lot of games
 How to get key : https://soggy-ware.cf/assets/js/key.js
 
 How to find key : In the second line of code, after the first &&
+
+# V.G. Hub
+```Script for almost any game```
+```loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()```
