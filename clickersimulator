@@ -1,0 +1,152 @@
+print("running")
+
+getgenv().autoTap = false
+getgenv().autoRebirth = false
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Clicky Clicky", "DarkTheme")
+
+local autoFarms = Window:NewTab("Auto Farms")
+local tp = Window:NewTab("Teleports")
+local farms = autoFarms:NewSection("Clicks and Rebirths")
+local teleports = tp:NewSection("Main World Teleports")
+local teleports2 = tp:NewSection("Space World Teleports")
+local teleports3 = tp:NewSection("Time World Teleports")
+local teleports4 = tp:NewSection("Ocean World Teleports")
+local teleports5 = tp:NewSection("Fantasy World Teleports")
+
+local clicksAmount
+farms:NewTextBox("Amount per click", "Amount per click", function(txt)
+	clicksAmount = txt
+end)
+
+farms:NewToggle("Auto Click", "I recommend using the Regular Auto Clicker", function(state)
+    if state then
+        getgenv().autoTap = true
+        autoClick(clicksAmount)
+    else
+        getgenv().autoTap = false
+        autoClick("20")
+    end
+end)
+
+local selectedRebirth
+farms:NewDropdown("Rebirth Amount", "Choose the amount of rebirths", {"1", "5", "10", "50", "250", "1000", "5000", "25000", "125000", "500000", "3000000", "15000000", "50000000", "250000000", "1000000000"}, function(Option)
+    selectedRebirth = tonumber(Option)
+end)
+
+farms:NewToggle("Auto Rebirth", "Automatically Rebirths to the amount selected", function(state)
+    if state and selectedRebirth then
+        getgenv().autoRebirth = true
+        autoRebirths(selectedRebirth)
+    else
+        getgenv().autoRebirth = false
+        autoRebirths(1)
+    end
+end)
+
+local selectedWorld
+teleports:NewDropdown("Main World Teleports", "Select Island to Teleport to", {"Sky", "Ice", "Lava", "Pirate", "Space", "Forest", "Candyland", "Atlantis", "Tropical", "Bee", "Galaxy"}, function(Option)
+    selectedWorld = Option
+end)
+
+teleports:NewButton("Teleport Selected", "Teleports to selected island", function()
+    if selectedWorld then
+        teleportWorld(selectedWorld) 
+    end
+end)
+
+local selectedWorld2
+teleports2:NewDropdown("Space World Teleports", "Select Island to Teleport to", { "Robot", "Chemical", "Steampunk", "Holographic", "Music", "Hacker", "Mars"}, function(Option)
+    selectedWorld2 = Option
+end)
+
+teleports2:NewButton("Teleport Selected", "Teleports to selected island", function()
+    if selectedWorld2 then
+        teleportWorld(selectedWorld2) 
+    end
+end)
+
+local selectedWorld3
+teleports3:NewDropdown("Time World Teleports", "Select Island to Teleport to", { "Dinosaur", "Egypt", "Ice Age", "Samurai", "Rome", "Jungle", "Viking", "Wild West", "Future", "Heaven", "Hell"}, function(Option)
+    selectedWorld3 = Option
+end)
+
+teleports3:NewButton("Teleport Selected", "Teleports to selected island", function()
+    if selectedWorld3 then
+        teleportWorld(selectedWorld3) 
+    end
+end)
+
+local selectedWorld4
+teleports4:NewDropdown("Ocean World Teleports", "Select Island to Teleport to", { "Swamp", "Beach", "Sunken City", "Coral Reef", "Privateer", "Glacier", "Deep Sea", "Underwater Cyborg", "Mythological"}, function(Option)
+    selectedWorld4 = Option
+end)
+
+teleports4:NewButton("Teleport Selected", "Teleports to selected island", function()
+    if selectedWorld4 then
+        teleportWorld(selectedWorld4) 
+    end
+end)
+
+local selectedWorld5
+teleports5:NewDropdown("Fantasy World Teleports", "Select Island to Teleport to", { "Fairy", "Magic", "Dragon", "nil", "nil", "nil", "nil", "nil"}, function(Option)
+    selectedWorld5 = Option
+end)
+
+teleports5:NewButton("Teleport Selected", "Teleports to selected island", function()
+    if selectedWorld5 then
+        teleportWorld(selectedWorld5) 
+    end
+end)
+
+function autoClick(clicksPerClick)
+    spawn(function()
+        while getgenv().autoTap == true do
+        
+            local args = {
+                [1] = "HUDHandler",
+                [2] = "Clickerr",
+                [3] = {
+                    ["manual"] = {
+                        [clicksPerClick] = 1
+                    }
+                }
+            }
+        
+            game:GetService("ReplicatedStorage").Events.ClientToServer.ClientToServerFunction:InvokeServer(unpack(args))
+            wait(1)
+        end
+    end)
+end
+
+function autoRebirths(rebirthAmount)
+    spawn(function()
+        while getgenv().autoRebirth == true do
+        
+            local args = {
+                [1] = "LocalScript",
+                [2] = "RequestRebirth",
+                [3] = rebirthAmount,
+                [4] = false,
+                [5] = false
+            }
+        
+            game:GetService("ReplicatedStorage").Events.ClientToServer.ClientToServerEvent:FireServer(unpack(args))
+            wait(1)
+        end
+    end)
+end
+
+function teleportTO(placeCFrame)
+    local plyr = game.Players.LocalPlayer
+    if plyr.Character then
+        plyr.Character.HumanoidRootPart.CFrame = placeCFrame
+    end
+end
+
+function teleportWorld(world)
+    if game:GetService("Workspace").Zones:FindFirstChild(world) then
+        teleportTO(game:GetService("Workspace").Zones[world].teleport.CFrame)
+    end
+end
