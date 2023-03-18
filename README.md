@@ -36,6 +36,9 @@ Energy Assault
 Aimblox
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/aimblox'))()```
 
+Tapping Simulator
+```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/tappingsimulator'))()```
+
 # Universal Admin
 
 Works in any game! ```loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()```
