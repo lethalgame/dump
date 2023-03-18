@@ -24,6 +24,9 @@ Randomizer
 Zombie Attack
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/zombieattack'))()```
 
+Apocolypse Tycoon
+```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/apocolypsetycoon'))()```
+
 # Universal Admin
 
 Works in any game! ```loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()```
