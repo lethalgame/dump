@@ -30,6 +30,9 @@ Apocolypse Tycoon
 Clicker Simulator
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/clickersimulator'))()```
 
+Energy Assault
+```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/energyassault'))()```
+
 # Universal Admin
 
 Works in any game! ```loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()```
