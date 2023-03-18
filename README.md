@@ -27,6 +27,9 @@ Zombie Attack
 Apocolypse Tycoon
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/apocolypsetycoon'))()```
 
+Clicker Simulator
+```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/clickersimulator'))()```
+
 # Universal Admin
 
 Works in any game! ```loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()```
