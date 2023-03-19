@@ -1,22 +1,18 @@
 game:GetService("StarterGui"):SetCore("SendNotification",{
                 Title = "Notification";
-                Text = "Hub now started.";
+                Text = "RT2 Hub now started.";
                 Duration = 1.5;})
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/GdN5iRbt"))() 
 local Window = Library.CreateLib("Exo Hub", "BloodTheme") 
 
---Hi
 
 local Tab1 = Window:NewTab("Restaurant Tycoon 2")
-local Tab1Section = Tab1:NewSection("Restaurant Tycoon 2")
-local Tab2Section = Tab1:NewSection("???")
+local Tab1Section = Tab1:NewSection("Cheats And Gui")
 
- --
-
-Tab1Section:NewButton("Automatic cooking on ", "If you press this button you will automatically cook really fast", function()
+Tab1Section:NewButton("Instant Cook", "Once clicked, your food will cook instantly.", function()
  game:GetService("StarterGui"):SetCore("SendNotification",{
-                Title = "Credits";
-                Text = "Exo Hub";
+                Title = "Notification";
+                Text = "Script Launched";
                 Duration = 1.5;
             })
 local Cooking = game.Players.LocalPlayer.PlayerScripts.CookingNew local CookProgress = require(Cooking.CookProgress) local MultiClick = require(Cooking.InputDetectors.MultiClick) local MouseMovement = require(Cooking.InputDetectors.MouseMovement) local MouseSpin = require(Cooking.InputDetectors.MouseSpin) local run = CookProgress.run CookProgress.run = function(...) local ARGS = {...} ARGS[3] = 0 return run(unpack(ARGS)) end MultiClick.start = function(...) local ARGS = {...} ARGS[3]() end MouseMovement.start = function(...) local ARGS = {...} ARGS[3]() end MouseSpin.start = function(...) local ARGS = {...} ARGS[3]() end
@@ -25,25 +21,9 @@ end)
 
 Tab1Section:NewButton("Restaurant Tycoon 2 Script Hub", "Script will start once clicked.", function()
 game:GetService("StarterGui"):SetCore("SendNotification",{
-                Title = "Credits";
-                Text = "Exo Hub";
+                Title = "Notification";
+                Text = "Script Launched";
                 Duration = 1.5;})
 loadstring(game:HttpGet("https://pastebin.com/raw/uAZf15LR"))()
 
-end)
-
-Tab2Section:NewButton("Thank you for using the script.", "Enjoy!", function()
-game:GetService("StarterGui"):SetCore("SendNotification",{
-                Title = "Credits";
-                Text = "Exo Hub";
-                Duration = 1.5;})
-                
-end)
-
-Tab2Section:NewButton("???", "???", function()
-game:GetService("StarterGui"):SetCore("SendNotification",{
-                Title = "Credits";
-                Text = "Exo Hub";
-                Duration = 1.5;})
-                
 end)
