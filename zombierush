@@ -6,9 +6,8 @@ local Library = loadstring(game:HttpGet("https://pastebin.com/raw/GdN5iRbt"))()
 local Window = Library.CreateLib("Exo Hub", "BloodTheme") 
 
 
-local Tab1 = Window:NewTab("Restaurant Tycoon 2")
-local Tab1Section = Tab1:NewSection("Restaurant Tycoon 2")
-local Tab2Section = Tab1:NewSection("???")
+local Tab1 = Window:NewTab("Zombie Rush")
+local Tab1Section = Tab1:NewSection("Autofarm")
 
 
 Tab1Section:NewButton("VG Hub", "Launches VG Hub", function()
