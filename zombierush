@@ -36,3 +36,12 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 
 end)
+
+Tab1Section:NewButton("Launch All", "Launches all scripts", function()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Notification";
+                Text = "Launched all scripts";
+                Duration = 1.5;})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0exo/w/main/w", true))()
+
+end)
