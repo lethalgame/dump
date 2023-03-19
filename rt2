@@ -19,7 +19,7 @@ local Cooking = game.Players.LocalPlayer.PlayerScripts.CookingNew local CookProg
 
 end)
 
-Tab1Section:NewButton("Restaurant Tycoon 2 Script Hub", "Script will start once clicked.", function()
+Tab1Section:NewButton("RT2 Hub", "Script will start once clicked.", function()
 game:GetService("StarterGui"):SetCore("SendNotification",{
                 Title = "Notification";
                 Text = "Script Launched";
