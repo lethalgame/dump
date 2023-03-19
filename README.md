@@ -42,6 +42,9 @@ Tapping Simulator
 Anime Fighting Simulator
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/afs'))()```
 
+Friday Night Funking
+```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/fnf'))()```
+
 # Universal Admin
 
 Works in any game! ```loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()```
