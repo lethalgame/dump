@@ -1,2 +1,39 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Notification";
+                Text = "Hub now started.";
+                Duration = 1.5;})
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/GdN5iRbt"))() 
+local Window = Library.CreateLib("Exo Hub", "BloodTheme") 
+
+
+local Tab1 = Window:NewTab("Restaurant Tycoon 2")
+local Tab1Section = Tab1:NewSection("Restaurant Tycoon 2")
+local Tab2Section = Tab1:NewSection("???")
+
+
+Tab1Section:NewButton("VG Hub", "Launches VG Hub", function()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Notification";
+                Text = "Launched VG Hub";
+                Duration = 1.5;})
 loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+
+end)
+
+Tab1Section:NewButton("Owl Hub", "Launches Owl Hub", function()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Notification";
+                Text = "Launched Owl Hub";
+                Duration = 1.5;})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+
+end)
+
+Tab1Section:NewButton("Universal Admin", "Launches Universal Admin", function()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Notification";
+                Text = "Launched Universal Admin";
+                Duration = 1.5;})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+
+end)
