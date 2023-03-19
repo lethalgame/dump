@@ -39,6 +39,9 @@ Aimblox
 Tapping Simulator
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/tappingsimulator'))()```
 
+Anime Fighting Simulator
+```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/afs'))()```
+
 # Universal Admin
 
 Works in any game! ```loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()```
