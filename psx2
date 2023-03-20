@@ -1,0 +1,1 @@
+loadstring(game:HttpGet(\"https://scriptblox.com/raw/Pet-Simulator-X!-Project-Meow-Updated-Version-2018\", true))()
