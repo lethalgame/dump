@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jasamcovjek28/PET-SIMULATOR-X/main/Main.lua"))()
