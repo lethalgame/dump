@@ -33,9 +33,6 @@ Clicker Simulator
 Energy Assault
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/energyassault'))()```
 
-Aimblox
-```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/aimblox'))()```
-
 Tapping Simulator
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/tappingsimulator'))()```
 
