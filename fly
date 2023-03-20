@@ -1,0 +1,996 @@
+print("Moon Hub Has Loaded!")
+
+
+local mainmoon = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local home = Instance.new("TextButton")
+local scripts = Instance.new("TextButton")
+local credits = Instance.new("TextButton")
+local hometab = Instance.new("Frame")
+local PlayerImage = Instance.new("ImageLabel")
+local welcometxt = Instance.new("TextLabel")
+local PlayerName = Instance.new("TextLabel")
+local creditstab = Instance.new("Frame")
+local codingcred = Instance.new("TextLabel")
+local hubstab = Instance.new("Frame")
+local bar = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local gameshub = Instance.new("TextButton")
+local scriptstabscroll = Instance.new("ScrollingFrame")
+local andromedagui = Instance.new("TextButton")
+local hitbox = Instance.new("TextButton")
+local infyield = Instance.new("TextButton")
+local jailbreakgui = Instance.new("TextButton")
+local kakaultrax = Instance.new("TextButton")
+local reviz = Instance.new("TextButton")
+local trollinggui = Instance.new("TextButton")
+local utg = Instance.new("TextButton")
+local meepcityinfmoney = Instance.new("TextButton")
+local flyguiarceusx = Instance.new("TextButton")
+local gamestab = Instance.new("Frame")
+local prisonlifetext = Instance.new("TextLabel")
+local prisonlifeimage = Instance.new("ImageLabel")
+local executeprisonlife = Instance.new("TextButton")
+local gamestabscroll = Instance.new("ScrollingFrame")
+local executefridaynight = Instance.new("TextButton")
+local ffautoplayimage = Instance.new("ImageLabel")
+local funkyfridaytext = Instance.new("TextLabel")
+local executejailbreak = Instance.new("TextButton")
+local jailbreakimage = Instance.new("ImageLabel")
+local jailbreaktext = Instance.new("TextLabel")
+local executepetsimx = Instance.new("TextButton")
+local petsimximage = Instance.new("ImageLabel")
+local petsimxtext = Instance.new("TextLabel")
+local bloxfruittext = Instance.new("TextLabel")
+local bloxfruitimage = Instance.new("ImageLabel")
+local executebloxfruit = Instance.new("TextButton")
+local bedwarsimage = Instance.new("ImageLabel")
+local bedwarstext = Instance.new("TextLabel")
+local executebedwars = Instance.new("TextButton")
+local executedahood = Instance.new("TextButton")
+local dahoodtext = Instance.new("TextLabel")
+local dahoodimage = Instance.new("ImageLabel")
+local kinglegacyimage = Instance.new("ImageLabel")
+local executekinglegacy = Instance.new("TextButton")
+local kinglegacytext = Instance.new("TextLabel")
+local skywarsimage = Instance.new("ImageLabel")
+local executeskywars = Instance.new("TextButton")
+local skywarstext = Instance.new("TextLabel")
+local truepiece = Instance.new("ImageLabel")
+local truepricetext = Instance.new("TextLabel")
+local executetruepiece = Instance.new("TextButton")
+local hubstabscroll = Instance.new("ScrollingFrame")
+local hubs = Instance.new("TextButton")
+local hubstabscrollnew = Instance.new("Frame")
+local citrushub = Instance.new("TextButton")
+local dinohub = Instance.new("TextButton")
+local domainhub = Instance.new("TextButton")
+local ezhub = Instance.new("TextButton")
+local gabxhub = Instance.new("TextButton")
+local garfieldhub = Instance.new("TextButton")
+local hyperhub = Instance.new("TextButton")
+local linorixhub = Instance.new("TextButton")
+local luckyhub = Instance.new("TextButton")
+local psyhub = Instance.new("TextButton")
+local sighthub = Instance.new("TextButton")
+
+--Properties:
+
+mainmoon.Name = "mainmoon"
+mainmoon.Parent = game.CoreGui
+mainmoon.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = mainmoon
+main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+main.Position = UDim2.new(0.288126022, 0, 0.137956336, 0)
+main.Size = UDim2.new(0, 651, 0, 360)
+main.Active = true
+main.Draggable = true
+
+home.Name = "home"
+home.Parent = main
+home.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+home.BorderSizePixel = 0
+home.Position = UDim2.new(0.00694444403, 0, 0.114285722, 0)
+home.Size = UDim2.new(0, 150, 0, 34)
+home.Font = Enum.Font.Ubuntu
+home.Text = "Home"
+home.TextColor3 = Color3.fromRGB(255, 255, 255)
+home.TextSize = 14.000
+
+scripts.Name = "scripts"
+scripts.Parent = main
+scripts.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+scripts.BorderSizePixel = 0
+scripts.Position = UDim2.new(0.447436661, 0, 0.114285715, 0)
+scripts.Size = UDim2.new(0, 123, 0, 34)
+scripts.Font = Enum.Font.Ubuntu
+scripts.Text = "Scripts"
+scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+scripts.TextSize = 14.000
+
+credits.Name = "credits"
+credits.Parent = main
+credits.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+credits.BorderSizePixel = 0
+credits.Position = UDim2.new(0.833199978, 0, 0.1142857, 0)
+credits.Size = UDim2.new(0, 108, 0, 34)
+credits.Font = Enum.Font.Ubuntu
+credits.Text = "Credits"
+credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+credits.TextSize = 14.000
+
+hometab.Name = "hometab"
+hometab.Parent = main
+hometab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hometab.BackgroundTransparency = 1.000
+hometab.Position = UDim2.new(0, 0, 0.235714301, 0)
+hometab.Size = UDim2.new(0, 651, 0, 275)
+
+PlayerImage.Name = "PlayerImage"
+PlayerImage.Parent = hometab
+PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerImage.BackgroundTransparency = 1.000
+PlayerImage.Position = UDim2.new(0.446059644, 0, 0.029792808, 0)
+PlayerImage.Size = UDim2.new(0, 78, 0, 62)
+PlayerImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+welcometxt.Name = "welcometxt"
+welcometxt.Parent = hometab
+welcometxt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+welcometxt.BackgroundTransparency = 1.000
+welcometxt.BorderSizePixel = 0
+welcometxt.Position = UDim2.new(0.288969308, 0, 0.375077486, 0)
+welcometxt.Size = UDim2.new(0, 291, 0, 50)
+welcometxt.Font = Enum.Font.TitilliumWeb
+welcometxt.Text = "Welcome To Moon Hub!"
+welcometxt.TextColor3 = Color3.fromRGB(255, 255, 255)
+welcometxt.TextScaled = true
+welcometxt.TextSize = 14.000
+welcometxt.TextWrapped = true
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = hometab
+PlayerName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.BackgroundTransparency = 1.000
+PlayerName.BorderSizePixel = 0
+PlayerName.Position = UDim2.new(0.27585119, 0, 0.528137982, 0)
+PlayerName.Size = UDim2.new(0, 299, 0, 64)
+PlayerName.Font = Enum.Font.TitilliumWeb
+PlayerName.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.TextScaled = true
+PlayerName.TextSize = 14.000
+PlayerName.TextWrapped = true
+
+creditstab.Name = "creditstab"
+creditstab.Parent = main
+creditstab.Active = true
+creditstab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+creditstab.BackgroundTransparency = 1.000
+creditstab.Position = UDim2.new(0, 0, 0.235714301, 0)
+creditstab.Size = UDim2.new(0, 651, 0, 275)
+creditstab.Visible = false
+
+codingcred.Name = "codingcred"
+codingcred.Parent = creditstab
+codingcred.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+codingcred.BackgroundTransparency = 1.000
+codingcred.Position = UDim2.new(0.00640841015, 0, 0.00264853239, 0)
+codingcred.Size = UDim2.new(0, 200, 0, 50)
+codingcred.Font = Enum.Font.Ubuntu
+codingcred.Text = "Coding: moonok#6209"
+codingcred.TextColor3 = Color3.fromRGB(255, 255, 255)
+codingcred.TextSize = 20.000
+codingcred.TextWrapped = true
+
+hubstab.Name = "hubstab"
+hubstab.Parent = main
+hubstab.Active = true
+hubstab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hubstab.BackgroundTransparency = 1.000
+hubstab.Position = UDim2.new(0, 0, 0.235714287, 0)
+hubstab.Size = UDim2.new(0, 576, 0, 254)
+hubstab.Visible = false
+
+bar.Name = "bar"
+bar.Parent = main
+bar.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+bar.Size = UDim2.new(0, 651, 0, 26)
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0163934417, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 93, 0, 26)
+TextLabel.Font = Enum.Font.Ubuntu
+TextLabel.Text = "Moon Hub V1.3"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+gameshub.Name = "gameshub"
+gameshub.Parent = main
+gameshub.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+gameshub.BorderSizePixel = 0
+gameshub.Position = UDim2.new(0.24941726, 0, 0.114285715, 0)
+gameshub.Size = UDim2.new(0, 125, 0, 34)
+gameshub.Font = Enum.Font.Ubuntu
+gameshub.Text = "Game Hub"
+gameshub.TextColor3 = Color3.fromRGB(255, 255, 255)
+gameshub.TextSize = 14.000
+
+scriptstabscroll.Name = "scriptstabscroll"
+scriptstabscroll.Parent = main
+scriptstabscroll.Active = true
+scriptstabscroll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+scriptstabscroll.BackgroundTransparency = 1.000
+scriptstabscroll.Position = UDim2.new(0, 0, 0.235999972, 0)
+scriptstabscroll.Size = UDim2.new(0, 651, 0, 275)
+scriptstabscroll.Visible = false
+
+andromedagui.Name = "andromedagui"
+andromedagui.Parent = scriptstabscroll
+andromedagui.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+andromedagui.Position = UDim2.new(0.243842855, 0, 0.000100955367, 0)
+andromedagui.Size = UDim2.new(0, 132, 0, 34)
+andromedagui.Font = Enum.Font.SourceSans
+andromedagui.Text = "Andromeda FE GUI"
+andromedagui.TextColor3 = Color3.fromRGB(255, 255, 255)
+andromedagui.TextSize = 18.000
+andromedagui.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://ghostbin.com/McVuO/raw"))();
+end)
+
+hitbox.Name = "hitbox"
+hitbox.Parent = scriptstabscroll
+hitbox.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+hitbox.Position = UDim2.new(0, 0, 0.0630491078, 0)
+hitbox.Size = UDim2.new(0, 150, 0, 34)
+hitbox.Font = Enum.Font.SourceSans
+hitbox.Text = "Giant Hitbox"
+hitbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+hitbox.TextSize = 18.000
+hitbox.MouseButton1Down:connect(function()
+	_G.HeadSize = 20
+	_G.Disabled = true
+
+	game:GetService('RunService').RenderStepped:connect(function()
+		if _G.Disabled then
+			for i,v in next, game:GetService('Players'):GetPlayers() do
+				if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+					pcall(function()
+						v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+						v.Character.HumanoidRootPart.Transparency = 0.7
+						v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+						v.Character.HumanoidRootPart.Material = "Neon"
+						v.Character.HumanoidRootPart.CanCollide = false
+					end)
+				end
+			end
+		end
+	end)
+end)
+
+infyield.Name = "infyield"
+infyield.Parent = scriptstabscroll
+infyield.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+infyield.Position = UDim2.new(0, 0, 0.00136117544, 0)
+infyield.Size = UDim2.new(0, 150, 0, 34)
+infyield.Font = Enum.Font.SourceSans
+infyield.Text = "Infinite Yield"
+infyield.TextColor3 = Color3.fromRGB(255, 255, 255)
+infyield.TextSize = 18.000
+infyield.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+jailbreakgui.Name = "jailbreakgui"
+jailbreakgui.Parent = scriptstabscroll
+jailbreakgui.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+jailbreakgui.Position = UDim2.new(0.678278685, 0, 0.658878565, 0)
+jailbreakgui.Size = UDim2.new(0, 150, 0, 34)
+jailbreakgui.Visible = false
+jailbreakgui.Font = Enum.Font.SourceSans
+jailbreakgui.Text = "Jailbreak GUI"
+jailbreakgui.TextColor3 = Color3.fromRGB(255, 255, 255)
+jailbreakgui.TextSize = 18.000
+jailbreakgui.MouseButton1Down:connect(function()
+	wait(1)
+	loadstring(game:GetObjects("rbxassetid://3762448307")[1].Source)()
+	wait(1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Jailbreak"))()
+end)
+
+kakaultrax.Name = "kakaultrax"
+kakaultrax.Parent = scriptstabscroll
+kakaultrax.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+kakaultrax.Position = UDim2.new(0.0069444445, 0, 0.0642172024, 0)
+kakaultrax.Size = UDim2.new(0, 146, 0, 34)
+kakaultrax.Visible = false
+kakaultrax.Font = Enum.Font.SourceSans
+kakaultrax.Text = "KaraUltraX (Da Hood)"
+kakaultrax.TextColor3 = Color3.fromRGB(255, 255, 255)
+kakaultrax.TextSize = 18.000
+kakaultrax.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://ghostbin.com/X4TGu/raw"))();
+end)
+
+reviz.Name = "reviz"
+reviz.Parent = scriptstabscroll
+reviz.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+reviz.Position = UDim2.new(0.243783608, 0, 0.0613397472, 0)
+reviz.Size = UDim2.new(0, 134, 0, 34)
+reviz.Font = Enum.Font.SourceSans
+reviz.Text = "Reviz Admin"
+reviz.TextColor3 = Color3.fromRGB(255, 255, 255)
+reviz.TextSize = 18.000
+reviz.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/TksXLB78", true))()
+end)
+
+trollinggui.Name = "trollinggui"
+trollinggui.Parent = scriptstabscroll
+trollinggui.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+trollinggui.Position = UDim2.new(0.45651719, 0, 0.0616839752, 0)
+trollinggui.Size = UDim2.new(0, 152, 0, 34)
+trollinggui.Font = Enum.Font.SourceSans
+trollinggui.Text = "FE Trolling GUI"
+trollinggui.TextColor3 = Color3.fromRGB(255, 255, 255)
+trollinggui.TextSize = 18.000
+
+utg.Name = "utg"
+utg.Parent = scriptstabscroll
+utg.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+utg.Position = UDim2.new(0.456739485, 0, 0.00114002579, 0)
+utg.Size = UDim2.new(0, 152, 0, 34)
+utg.Font = Enum.Font.SourceSans
+utg.Text = "UTG GUI"
+utg.TextColor3 = Color3.fromRGB(255, 255, 255)
+utg.TextSize = 18.000
+
+meepcityinfmoney.Name = "meepcityinfmoney"
+meepcityinfmoney.Parent = scriptstabscroll
+meepcityinfmoney.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+meepcityinfmoney.Position = UDim2.new(0.711731791, 0, -0.00118188106, 0)
+meepcityinfmoney.Size = UDim2.new(0, 168, 0, 34)
+meepcityinfmoney.Font = Enum.Font.SourceSans
+meepcityinfmoney.Text = "Not Working! (MC)"
+meepcityinfmoney.TextColor3 = Color3.fromRGB(255, 255, 255)
+meepcityinfmoney.TextSize = 18.000
+
+flyguiarceusx.Name = "flyguiarceusx"
+flyguiarceusx.Parent = scriptstabscroll
+flyguiarceusx.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+flyguiarceusx.Position = UDim2.new(0.711731791, 0, 0.0613181181, 0)
+flyguiarceusx.Size = UDim2.new(0, 168, 0, 34)
+flyguiarceusx.Font = Enum.Font.SourceSans
+flyguiarceusx.Text = "Fly GUI (Arceus X)"
+flyguiarceusx.TextColor3 = Color3.fromRGB(255, 255, 255)
+flyguiarceusx.TextSize = 18.000
+flyguiarceusx.MouseButton1Down:connect(function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+end)
+
+gamestab.Name = "gamestab"
+gamestab.Parent = main
+gamestab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gamestab.BackgroundTransparency = 1.000
+gamestab.BorderSizePixel = 0
+gamestab.Position = UDim2.new(0.00347222225, 0, 0.216216221, 0)
+gamestab.Size = UDim2.new(0, 576, 0, 261)
+gamestab.Visible = false
+
+prisonlifetext.Name = "prisonlifetext"
+prisonlifetext.Parent = gamestab
+prisonlifetext.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+prisonlifetext.BackgroundTransparency = 1.000
+prisonlifetext.Position = UDim2.new(0.303819418, 0, 0.0306513403, 0)
+prisonlifetext.Size = UDim2.new(0, 91, 0, 36)
+prisonlifetext.Font = Enum.Font.SourceSans
+prisonlifetext.Text = "Prison Life"
+prisonlifetext.TextColor3 = Color3.fromRGB(255, 255, 255)
+prisonlifetext.TextSize = 14.000
+
+prisonlifeimage.Name = "prisonlifeimage"
+prisonlifeimage.Parent = gamestab
+prisonlifeimage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+prisonlifeimage.Position = UDim2.new(0.303819418, 0, 0.16858238, 0)
+prisonlifeimage.Size = UDim2.new(0, 91, 0, 64)
+prisonlifeimage.Image = "rbxassetid://8008631686"
+
+executeprisonlife.Name = "executeprisonlife"
+executeprisonlife.Parent = gamestab
+executeprisonlife.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+executeprisonlife.Position = UDim2.new(0.303819418, 0, 0.450827986, 0)
+executeprisonlife.Size = UDim2.new(0, 91, 0, 23)
+executeprisonlife.Font = Enum.Font.SourceSans
+executeprisonlife.Text = "Execute Script"
+executeprisonlife.TextColor3 = Color3.fromRGB(255, 255, 255)
+executeprisonlife.TextSize = 18.000
+executeprisonlife.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/pPW4pg2i"))();
+end)
+
+gamestabscroll.Name = "gamestabscroll"
+gamestabscroll.Parent = main
+gamestabscroll.Active = true
+gamestabscroll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gamestabscroll.BackgroundTransparency = 1.000
+gamestabscroll.Position = UDim2.new(0.00300000445, 0, 0.216000021, 0)
+gamestabscroll.Size = UDim2.new(0, 649, 0, 282)
+gamestabscroll.Visible = false
+
+executefridaynight.Name = "executefridaynight"
+executefridaynight.Parent = gamestabscroll
+executefridaynight.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+executefridaynight.Position = UDim2.new(0.0239752121, 0, 0.143668652, 0)
+executefridaynight.Size = UDim2.new(0, 85, 0, 23)
+executefridaynight.Font = Enum.Font.SourceSans
+executefridaynight.Text = "Execute Scripts"
+executefridaynight.TextColor3 = Color3.fromRGB(255, 255, 255)
+executefridaynight.TextSize = 18.000
+
+ffautoplayimage.Name = "ffautoplayimage"
+ffautoplayimage.Parent = gamestabscroll
+ffautoplayimage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ffautoplayimage.Position = UDim2.new(0.0162252598, 0, 0.0549406447, 0)
+ffautoplayimage.Size = UDim2.new(0, 91, 0, 64)
+ffautoplayimage.Image = "rbxassetid://8008590216"
+
+funkyfridaytext.Name = "funkyfridaytext"
+funkyfridaytext.Parent = gamestabscroll
+funkyfridaytext.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+funkyfridaytext.BackgroundTransparency = 1.000
+funkyfridaytext.Position = UDim2.new(0.0179041438, 0, 0.00108874647, 0)
+funkyfridaytext.Size = UDim2.new(0, 91, 0, 36)
+funkyfridaytext.Font = Enum.Font.Ubuntu
+funkyfridaytext.Text = "Coming Soon"
+funkyfridaytext.TextColor3 = Color3.fromRGB(255, 255, 255)
+funkyfridaytext.TextSize = 14.000
+
+executejailbreak.Name = "executejailbreak"
+executejailbreak.Parent = gamestabscroll
+executejailbreak.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+executejailbreak.Position = UDim2.new(0.190364897, 0, 0.141552851, 0)
+executejailbreak.Size = UDim2.new(0, 91, 0, 23)
+executejailbreak.Font = Enum.Font.SourceSans
+executejailbreak.Text = "Execute Scripts"
+executejailbreak.TextColor3 = Color3.fromRGB(255, 255, 255)
+executejailbreak.TextSize = 18.000
+executejailbreak.MouseButton1Down:connect(function()
+	wait(1)
+	loadstring(game:GetObjects("rbxassetid://3762448307")[1].Source)()
+	wait(1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Jailbreak"))()
+end)
+
+jailbreakimage.Name = "jailbreakimage"
+jailbreakimage.Parent = gamestabscroll
+jailbreakimage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+jailbreakimage.Position = UDim2.new(0.190560251, 0, 0.0535503961, 0)
+jailbreakimage.Size = UDim2.new(0, 91, 0, 64)
+jailbreakimage.Image = "rbxassetid://8008708915"
+
+jailbreaktext.Name = "jailbreaktext"
+jailbreaktext.Parent = gamestabscroll
+jailbreaktext.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+jailbreaktext.BackgroundTransparency = 1.000
+jailbreaktext.Position = UDim2.new(0.190560222, 0, 0.00282281241, 0)
+jailbreaktext.Size = UDim2.new(0, 91, 0, 36)
+jailbreaktext.Font = Enum.Font.Ubuntu
+jailbreaktext.Text = "Jailbreak"
+jailbreaktext.TextColor3 = Color3.fromRGB(255, 255, 255)
+jailbreaktext.TextSize = 14.000
+
+executepetsimx.Name = "executepetsimx"
+executepetsimx.Parent = gamestabscroll
+executepetsimx.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+executepetsimx.Position = UDim2.new(0.362825692, 0, 0.14155288, 0)
+executepetsimx.Size = UDim2.new(0, 91, 0, 23)
+executepetsimx.Font = Enum.Font.SourceSans
+executepetsimx.Text = "Execute Scripts"
+executepetsimx.TextColor3 = Color3.fromRGB(255, 255, 255)
+executepetsimx.TextSize = 18.000
+executepetsimx.MouseButton1Down:connect(function()
+	wait(1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/si1nnx/psxx/main/g"))()
+	wait(1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/W41K3R-Hub/W41K3R/main/Loader.lua"))()
+	wait(1)
+	loadstring(game:HttpGet("https://pastebin.com/raw/1EQmGiQr", true))()
+
+end)
+
+petsimximage.Name = "petsimximage"
+petsimximage.Parent = gamestabscroll
+petsimximage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+petsimximage.Position = UDim2.new(0.362825751, 0, 0.052394066, 0)
+petsimximage.Size = UDim2.new(0, 91, 0, 64)
+petsimximage.Image = "rbxassetid://8008671142"
+
+petsimxtext.Name = "petsimxtext"
+petsimxtext.Parent = gamestabscroll
+petsimxtext.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+petsimxtext.BackgroundTransparency = 1.000
+petsimxtext.Position = UDim2.new(0.362825781, 0, 0.00200432679, 0)
+petsimxtext.Size = UDim2.new(0, 91, 0, 36)
+petsimxtext.Font = Enum.Font.Ubuntu
+petsimxtext.Text = "Pet Simulator X"
+petsimxtext.TextColor3 = Color3.fromRGB(255, 255, 255)
+petsimxtext.TextSize = 14.000
+
+bloxfruittext.Name = "bloxfruittext"
+bloxfruittext.Parent = gamestabscroll
+bloxfruittext.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+bloxfruittext.BackgroundTransparency = 1.000
+bloxfruittext.Position = UDim2.new(0.536046386, 0, 0.00189171359, 0)
+bloxfruittext.Size = UDim2.new(0, 91, 0, 36)
+bloxfruittext.Font = Enum.Font.Ubuntu
+bloxfruittext.Text = "Blox Fruit"
+bloxfruittext.TextColor3 = Color3.fromRGB(255, 255, 255)
+bloxfruittext.TextSize = 14.000
+
+bloxfruitimage.Name = "bloxfruitimage"
+bloxfruitimage.Parent = gamestabscroll
+bloxfruitimage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bloxfruitimage.Position = UDim2.new(0.536046267, 0, 0.0529577732, 0)
+bloxfruitimage.Size = UDim2.new(0, 91, 0, 63)
+bloxfruitimage.Image = "http://www.roblox.com/asset/?id=6433062233"
+
+executebloxfruit.Name = "executebloxfruit"
+executebloxfruit.Parent = gamestabscroll
+executebloxfruit.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+executebloxfruit.Position = UDim2.new(0.536046267, 0, 0.14155288, 0)
+executebloxfruit.Size = UDim2.new(0, 91, 0, 23)
+executebloxfruit.Font = Enum.Font.SourceSans
+executebloxfruit.Text = "Execute Scripts"
+executebloxfruit.TextColor3 = Color3.fromRGB(255, 255, 255)
+executebloxfruit.TextSize = 18.000
+executebloxfruit.MouseButton1Down:connect(function()
+	-- first script is dino hub second script is strike hub, third script is nights hub, fourth script is green gui, fifth is Noob Hub. also sub to moonxyz lol.
+	loadstring(game:HttpGet("https://pastebin.com/raw/1EQmGiQr", true))()
+	wait(1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/StormSKz12/StirkeHub1/main/Gameincluded"))()
+	wait(1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/Night_Script/main/BloxFruit.lua"))()
+	wait(1)
+	loadstring(game:HttpGet("https://rasputin-bf.glitch.me/bloxfruits.lua"))()
+	wait(1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/koio08199za/Blox-Fruit/main/NOOBHUB_(V2).Lua"))()
+
+end)
+
+bedwarsimage.Name = "bedwarsimage"
+bedwarsimage.Parent = gamestabscroll
+bedwarsimage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bedwarsimage.Position = UDim2.new(0.707078636, 0, 0.0515688844, 0)
+bedwarsimage.Size = UDim2.new(0, 91, 0, 63)
+bedwarsimage.Image = "http://www.roblox.com/asset/?id=7774848729"
+
+bedwarstext.Name = "bedwarstext"
+bedwarstext.Parent = gamestabscroll
+bedwarstext.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+bedwarstext.BackgroundTransparency = 1.000
+bedwarstext.Position = UDim2.new(0.705537915, 0, 0.00189171336, 0)
+bedwarstext.Size = UDim2.new(0, 91, 0, 36)
+bedwarstext.Font = Enum.Font.Ubuntu
+bedwarstext.Text = "Bed Wars"
+bedwarstext.TextColor3 = Color3.fromRGB(255, 255, 255)
+bedwarstext.TextSize = 14.000
+
+executebedwars.Name = "executebedwars"
+executebedwars.Parent = gamestabscroll
+executebedwars.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+executebedwars.Position = UDim2.new(0.707078636, 0, 0.14155288, 0)
+executebedwars.Size = UDim2.new(0, 91, 0, 23)
+executebedwars.Font = Enum.Font.SourceSans
+executebedwars.Text = "Execute Scripts"
+executebedwars.TextColor3 = Color3.fromRGB(255, 255, 255)
+executebedwars.TextSize = 18.000
+executebedwars.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://ghostbin.com/0mlSM/raw"))();
+end)
+
+executedahood.Name = "executedahood"
+executedahood.Parent = gamestabscroll
+executedahood.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+executedahood.Position = UDim2.new(0.0183267295, 0, 0.305441797, 0)
+executedahood.Size = UDim2.new(0, 91, 0, 23)
+executedahood.Font = Enum.Font.SourceSans
+executedahood.Text = "Execute Scripts"
+executedahood.TextColor3 = Color3.fromRGB(255, 255, 255)
+executedahood.TextSize = 18.000
+executedahood.MouseButton1Down:connect(function()
+	wait(1)
+	loadstring(game:HttpGet("https://ghostbin.com/e5Ad4/raw"))();
+	wait(1)
+	loadstring(game:HttpGet("https://ghostbin.com/TtRsE/raw"))();
+	wait(1)
+	loadstring(game:HttpGet("https://ghostbin.com/rZA9a/raw"))();
+end)
+
+dahoodtext.Name = "dahoodtext"
+dahoodtext.Parent = gamestabscroll
+dahoodtext.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+dahoodtext.BackgroundTransparency = 1.000
+dahoodtext.Position = UDim2.new(0.0183268171, 0, 0.174762771, 0)
+dahoodtext.Size = UDim2.new(0, 91, 0, 31)
+dahoodtext.Font = Enum.Font.Ubuntu
+dahoodtext.Text = "Da Hood"
+dahoodtext.TextColor3 = Color3.fromRGB(255, 255, 255)
+dahoodtext.TextSize = 14.000
+
+dahoodimage.Name = "dahoodimage"
+dahoodimage.Parent = gamestabscroll
+dahoodimage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dahoodimage.Position = UDim2.new(0.0184899848, 0, 0.216666654, 0)
+dahoodimage.Size = UDim2.new(0, 91, 0, 64)
+dahoodimage.Image = "rbxassetid://6920793410"
+
+kinglegacyimage.Name = "kinglegacyimage"
+kinglegacyimage.Parent = gamestabscroll
+kinglegacyimage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+kinglegacyimage.Position = UDim2.new(0.189522341, 0, 0.215277761, 0)
+kinglegacyimage.Size = UDim2.new(0, 91, 0, 64)
+kinglegacyimage.Image = "http://www.roblox.com/asset/?id=7674287964"
+
+executekinglegacy.Name = "executekinglegacy"
+executekinglegacy.Parent = gamestabscroll
+executekinglegacy.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+executekinglegacy.Position = UDim2.new(0.189359084, 0, 0.305441797, 0)
+executekinglegacy.Size = UDim2.new(0, 91, 0, 23)
+executekinglegacy.Font = Enum.Font.SourceSans
+executekinglegacy.Text = "Execute Scripts"
+executekinglegacy.TextColor3 = Color3.fromRGB(255, 255, 255)
+executekinglegacy.TextSize = 18.000
+executekinglegacy.MouseButton1Down:connect(function()
+	wait(1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/koio08199za/KingLegacy/main/NOOB%20HUB.Lua"))()
+	wait(1)
+	loadstring(game:HttpGet("https://pastebin.com/raw/1EQmGiQr", true))()
+end)
+
+kinglegacytext.Name = "kinglegacytext"
+kinglegacytext.Parent = gamestabscroll
+kinglegacytext.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+kinglegacytext.BackgroundTransparency = 1.000
+kinglegacytext.Position = UDim2.new(0.189359173, 0, 0.171984985, 0)
+kinglegacytext.Size = UDim2.new(0, 91, 0, 31)
+kinglegacytext.Font = Enum.Font.Ubuntu
+kinglegacytext.Text = "King Legacy"
+kinglegacytext.TextColor3 = Color3.fromRGB(255, 255, 255)
+kinglegacytext.TextSize = 14.000
+
+skywarsimage.Name = "skywarsimage"
+skywarsimage.Parent = gamestabscroll
+skywarsimage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+skywarsimage.Position = UDim2.new(0.362095535, 0, 0.213888869, 0)
+skywarsimage.Size = UDim2.new(0, 91, 0, 64)
+skywarsimage.Image = "http://www.roblox.com/asset/?id=2915260343"
+
+executeskywars.Name = "executeskywars"
+executeskywars.Parent = gamestabscroll
+executeskywars.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+executeskywars.Position = UDim2.new(0.361932278, 0, 0.304052919, 0)
+executeskywars.Size = UDim2.new(0, 91, 0, 23)
+executeskywars.Font = Enum.Font.SourceSans
+executeskywars.Text = "Execute Scripts"
+executeskywars.TextColor3 = Color3.fromRGB(255, 255, 255)
+executeskywars.TextSize = 18.000
+executeskywars.MouseButton1Down:connect(function()
+	wait(1)
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/cihonemm/5N1K-HUB-again-/main/5N1K%20HUB'))()
+	wait(1)
+	loadstring(game:HttpGet("https://ghostbin.com/OcNBJ/raw"))();
+	wait(1)
+end)
+
+skywarstext.Name = "skywarstext"
+skywarstext.Parent = gamestabscroll
+skywarstext.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+skywarstext.BackgroundTransparency = 1.000
+skywarstext.Position = UDim2.new(0.360391527, 0, 0.170596093, 0)
+skywarstext.Size = UDim2.new(0, 91, 0, 31)
+skywarstext.Font = Enum.Font.Ubuntu
+skywarstext.Text = "Skywars"
+skywarstext.TextColor3 = Color3.fromRGB(255, 255, 255)
+skywarstext.TextSize = 14.000
+
+truepiece.Name = "truepiece"
+truepiece.Parent = gamestabscroll
+truepiece.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+truepiece.Position = UDim2.new(0.534668744, 0, 0.216666654, 0)
+truepiece.Size = UDim2.new(0, 91, 0, 64)
+truepiece.Image = "http://www.roblox.com/asset/?id=8016706858"
+
+truepricetext.Name = "truepricetext"
+truepricetext.Parent = gamestabscroll
+truepricetext.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+truepricetext.BackgroundTransparency = 1.000
+truepricetext.Position = UDim2.new(0.536046386, 0, 0.170596093, 0)
+truepricetext.Size = UDim2.new(0, 91, 0, 31)
+truepricetext.Font = Enum.Font.Ubuntu
+truepricetext.Text = "True Piece"
+truepricetext.TextColor3 = Color3.fromRGB(255, 255, 255)
+truepricetext.TextSize = 14.000
+
+executetruepiece.Name = "executetruepiece"
+executetruepiece.Parent = gamestabscroll
+executetruepiece.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+executetruepiece.Position = UDim2.new(0.536046267, 0, 0.302664042, 0)
+executetruepiece.Size = UDim2.new(0, 91, 0, 23)
+executetruepiece.Font = Enum.Font.SourceSans
+executetruepiece.Text = "Execute Scripts"
+executetruepiece.TextColor3 = Color3.fromRGB(255, 255, 255)
+executetruepiece.TextSize = 18.000
+executetruepiece.MouseButton1Down:connect(function()
+	wait(1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Shisobad/new/main/script.lua"))()
+end)
+
+hubstabscroll.Name = "hubstabscroll"
+hubstabscroll.Parent = main
+hubstabscroll.Active = true
+hubstabscroll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hubstabscroll.BackgroundTransparency = 1.000
+hubstabscroll.Position = UDim2.new(0.00300000445, 0, 0.216000021, 0)
+hubstabscroll.Size = UDim2.new(0, 649, 0, 282)
+hubstabscroll.Visible = false
+
+hubs.Name = "hubs"
+hubs.Parent = main
+hubs.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+hubs.BorderSizePixel = 0
+hubs.Position = UDim2.new(0.647332072, 0, 0.1142857, 0)
+hubs.Size = UDim2.new(0, 108, 0, 34)
+hubs.Font = Enum.Font.Ubuntu
+hubs.Text = "Hubs"
+hubs.TextColor3 = Color3.fromRGB(255, 255, 255)
+hubs.TextSize = 14.000
+
+hubstabscrollnew.Name = "hubstabscrollnew"
+hubstabscrollnew.Parent = main
+hubstabscrollnew.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hubstabscrollnew.BackgroundTransparency = 1.000
+hubstabscrollnew.Position = UDim2.new(0, 0, 0.211111113, 0)
+hubstabscrollnew.Size = UDim2.new(0, 651, 0, 284)
+hubstabscrollnew.Visible = false
+
+citrushub.Name = "citrushub"
+citrushub.Parent = hubstabscrollnew
+citrushub.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+citrushub.Position = UDim2.new(0.487374991, 0, 0.320395201, 0)
+citrushub.Size = UDim2.new(0, 150, 0, 34)
+citrushub.Font = Enum.Font.SourceSans
+citrushub.Text = "Citrus Hub"
+citrushub.TextColor3 = Color3.fromRGB(255, 255, 255)
+citrushub.TextSize = 18.000
+citrushub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://ghostbin.com/xh8dc/raw"))();
+end)
+
+dinohub.Name = "dinohub"
+dinohub.Parent = hubstabscrollnew
+dinohub.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+dinohub.Position = UDim2.new(0.735638857, 0, 0.157491013, 0)
+dinohub.Size = UDim2.new(0, 150, 0, 34)
+dinohub.Font = Enum.Font.SourceSans
+dinohub.Text = "Dino Hub"
+dinohub.TextColor3 = Color3.fromRGB(255, 255, 255)
+dinohub.TextSize = 18.000
+dinohub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/1EQmGiQr", true))()
+end)
+
+domainhub.Name = "domainhub"
+domainhub.Parent = hubstabscrollnew
+domainhub.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+domainhub.Position = UDim2.new(0.487374991, 0, 0.161095843, 0)
+domainhub.Size = UDim2.new(0, 150, 0, 34)
+domainhub.Font = Enum.Font.SourceSans
+domainhub.Text = "Domain Hub V2"
+domainhub.TextColor3 = Color3.fromRGB(255, 255, 255)
+domainhub.TextSize = 18.000
+domainhub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexsoftworks/Domain/main/source'),true))()
+end)
+
+ezhub.Name = "ezhub"
+ezhub.Parent = hubstabscrollnew
+ezhub.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+ezhub.Position = UDim2.new(0.24084717, 0, 0.161095843, 0)
+ezhub.Size = UDim2.new(0, 150, 0, 34)
+ezhub.Font = Enum.Font.SourceSans
+ezhub.Text = "EZ Hub"
+ezhub.TextColor3 = Color3.fromRGB(255, 255, 255)
+ezhub.TextSize = 18.000
+ezhub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+end)
+
+gabxhub.Name = "gabxhub"
+gabxhub.Parent = hubstabscrollnew
+gabxhub.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+gabxhub.Position = UDim2.new(0.00694445986, 0, 0.161095843, 0)
+gabxhub.Size = UDim2.new(0, 142, 0, 34)
+gabxhub.Font = Enum.Font.SourceSans
+gabxhub.Text = "GabX Hub"
+gabxhub.TextColor3 = Color3.fromRGB(255, 255, 255)
+gabxhub.TextSize = 18.000
+gabxhub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://ghostbin.com/2L3H3/raw", true))()
+end)
+
+garfieldhub.Name = "garfieldhub"
+garfieldhub.Parent = hubstabscrollnew
+garfieldhub.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+garfieldhub.Position = UDim2.new(0.735638857, 0, 0.0166860223, 0)
+garfieldhub.Size = UDim2.new(0, 150, 0, 34)
+garfieldhub.Font = Enum.Font.Ubuntu
+garfieldhub.Text = "Garfield Hub"
+garfieldhub.TextColor3 = Color3.fromRGB(255, 255, 255)
+garfieldhub.TextSize = 14.000
+garfieldhub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/garfield%20hub", true))()
+end)
+
+hyperhub.Name = "hyperhub"
+hyperhub.Parent = hubstabscrollnew
+hyperhub.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+hyperhub.Position = UDim2.new(0.487374991, 0, 0.0132972822, 0)
+hyperhub.Size = UDim2.new(0, 150, 0, 34)
+hyperhub.Font = Enum.Font.SourceSans
+hyperhub.Text = "Hyper Hub"
+hyperhub.TextColor3 = Color3.fromRGB(255, 255, 255)
+hyperhub.TextSize = 18.000
+hyperhub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Shisobad/new/main/script.lua"))()
+end)
+
+linorixhub.Name = "linorixhub"
+linorixhub.Parent = hubstabscrollnew
+linorixhub.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+linorixhub.Position = UDim2.new(0.24084726, 0, 0.0169022251, 0)
+linorixhub.Size = UDim2.new(0, 150, 0, 34)
+linorixhub.Font = Enum.Font.SourceSans
+linorixhub.Text = "Linorix Hub V2"
+linorixhub.TextColor3 = Color3.fromRGB(255, 255, 255)
+linorixhub.TextSize = 18.000
+linorixhub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://ghostbin.com/NahWP/raw", true))()
+end)
+
+
+luckyhub.Name = "luckyhub"
+luckyhub.Parent = hubstabscrollnew
+luckyhub.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+luckyhub.Position = UDim2.new(0.00694445986, 0, 0.323313743, 0)
+luckyhub.Size = UDim2.new(0, 142, 0, 34)
+luckyhub.Font = Enum.Font.SourceSans
+luckyhub.Text = "Lucky Hub"
+luckyhub.TextColor3 = Color3.fromRGB(255, 255, 255)
+luckyhub.TextSize = 18.000
+luckyhub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://ghostbin.com/9be0x/raw", true))()
+end)
+
+psyhub.Name = "psyhub"
+psyhub.Parent = hubstabscrollnew
+psyhub.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+psyhub.Position = UDim2.new(0.00694445986, 0, 0.0169022251, 0)
+psyhub.Size = UDim2.new(0, 142, 0, 34)
+psyhub.Font = Enum.Font.SourceSans
+psyhub.Text = "PSY Hub"
+psyhub.TextColor3 = Color3.fromRGB(255, 255, 255)
+psyhub.TextSize = 18.000
+psyhub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://ghostbin.com/yuxVp/raw", true))()
+end)
+
+
+sighthub.Name = "sighthub"
+sighthub.Parent = hubstabscrollnew
+sighthub.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+sighthub.Position = UDim2.new(0.24084717, 0, 0.323313743, 0)
+sighthub.Size = UDim2.new(0, 150, 0, 34)
+sighthub.Font = Enum.Font.SourceSans
+sighthub.Text = "Sight Hub"
+sighthub.TextColor3 = Color3.fromRGB(255, 255, 255)
+sighthub.TextSize = 18.000
+sighthub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://ghostbin.com/OcNBJ/raw"))();
+end)
+
+-- Scripts:
+
+local function CMLZBDL_fake_script() -- home.LocalScript 
+	local script = Instance.new('LocalScript', home)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.hometab.Visible = true
+		script.Parent.Parent.scriptstabscroll.Visible = false
+		script.Parent.Parent.hubstabscrollnew.Visible = false
+		script.Parent.Parent.gamestabscroll.Visible = false
+		script.Parent.Parent.creditstab.Visible = false
+	end)
+end
+coroutine.wrap(CMLZBDL_fake_script)()
+local function KNOX_fake_script() -- scripts.LocalScript 
+	local script = Instance.new('LocalScript', scripts)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.scriptstabscroll.Visible = true
+		script.Parent.Parent.hometab.Visible = false
+		script.Parent.Parent.hubstabscrollnew.Visible = false
+		script.Parent.Parent.gamestabscroll.Visible = false
+		script.Parent.Parent.creditstab.Visible = false
+	end)
+end
+coroutine.wrap(KNOX_fake_script)()
+local function JVPBHMB_fake_script() -- credits.LocalScript 
+	local script = Instance.new('LocalScript', credits)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.creditstab.Visible = true
+		script.Parent.Parent.scriptstabscroll.Visible = false
+		script.Parent.Parent.hometab.Visible = false
+		script.Parent.Parent.gamestabscroll.Visible = false
+		script.Parent.Parent.hubstabscrollnew.Visible = false
+	end)
+end
+coroutine.wrap(JVPBHMB_fake_script)()
+local function EENYFHO_fake_script() -- hometab.LocalScript 
+	local script = Instance.new('LocalScript', hometab)
+
+	local frame = script.Parent
+	
+	
+	
+	local player = game.Players.LocalPlayer
+	
+	
+	
+	local userId = player.UserId
+	
+	local thumbType = Enum.ThumbnailType.AvatarBust
+	
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	
+	local content, isReady = game.Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	
+	
+	
+	
+	frame.PlayerImage.Image = content
+	
+	frame.PlayerName.Text = player.Name
+end
+coroutine.wrap(EENYFHO_fake_script)()
+local function BRWZQTO_fake_script() -- gameshub.LocalScript 
+	local script = Instance.new('LocalScript', gameshub)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.gamestabscroll.Visible = true
+		script.Parent.Parent.hometab.Visible = false
+		script.Parent.Parent.hubstabscrollnew.Visible = false
+		script.Parent.Parent.scriptstabscroll.Visible = false
+		script.Parent.Parent.hubstabscroll.Visible = false
+		script.Parent.Parent.creditstab.Visible = false
+	end)
+end
+coroutine.wrap(BRWZQTO_fake_script)()
+local function RNYY_fake_script() -- hubs.LocalScript 
+	local script = Instance.new('LocalScript', hubs)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.hubstabscrollnew.Visible = true
+		script.Parent.Parent.scriptstabscroll.Visible = false
+		script.Parent.Parent.hometab.Visible = false
+		script.Parent.Parent.gamestabscroll.Visible = false
+		script.Parent.Parent.hubstabscroll.Visible = false
+		script.Parent.Parent.creditstab.Visible = false
+	end)
+end
+coroutine.wrap(RNYY_fake_script)()
