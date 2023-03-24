@@ -1,0 +1,7 @@
+local args = {
+   [1] = true,
+   [2] = "FNAF 2",
+   [3] = 99999999999999999999999 -- you can set this to anything you want, the higher the number is, the more money and level you get, just don't set it to 7 or lower
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("LobbyRemotes"):WaitForChild("playerReadyEvent"):FireServer(unpack(args))
