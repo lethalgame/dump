@@ -45,3 +45,21 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 loadstring(game:HttpGet("https://raw.githubusercontent.com/0exo/w/main/w", true))()
 
 end)
+
+Tab1Section:NewButton("Noclip", "Launches all scripts", function()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Notification";
+                Text = "Launched all scripts";
+                Duration = 1.5;})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0exo/dump/main/noclip", true))()
+
+end)
+
+Tab1Section:NewButton("Anti AFK", "Launches all scripts", function()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Notification";
+                Text = "Launched all scripts";
+                Duration = 1.5;})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0exo/dump/main/antiafk", true))()
+
+end)
