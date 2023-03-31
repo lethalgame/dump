@@ -19,33 +19,6 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/
 
 end)
 
-Tab1Section:NewButton("Owl Hub", "Launches Owl Hub", function()
-game:GetService("StarterGui"):SetCore("SendNotification",{
-                Title = "Notification";
-                Text = "Launched Owl Hub";
-                Duration = 1.5;})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
-
-end)
-
-Tab1Section:NewButton("Universal Admin", "Launches Universal Admin", function()
-game:GetService("StarterGui"):SetCore("SendNotification",{
-                Title = "Notification";
-                Text = "Launched Universal Admin";
-                Duration = 1.5;})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
-
-end)
-
-Tab1Section:NewButton("Launch All", "Launches all scripts", function()
-game:GetService("StarterGui"):SetCore("SendNotification",{
-                Title = "Notification";
-                Text = "Launched all scripts";
-                Duration = 1.5;})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/0exo/w/main/w", true))()
-
-end)
-
 Tab1Section:NewButton("Noclip", "Launches all scripts", function()
 game:GetService("StarterGui"):SetCore("SendNotification",{
                 Title = "Notification";
