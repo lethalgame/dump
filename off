@@ -1,9 +1,0 @@
-local Noclip = nil
-local Clip = nil
-
-function clip()
-	if Noclip then Noclip:Disconnect() end
-	Clip = true
-end
-
-clip() -- to toggle noclip() and clip()
