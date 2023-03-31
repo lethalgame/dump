@@ -1,0 +1,29 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "HEY!";
+                Text = "You can toggle noclip here!";
+                Duration = 1.5;})
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/GdN5iRbt"))() 
+local Window = Library.CreateLib("Noclip", "BloodTheme") 
+
+
+local Tab1 = Window:NewTab("Noclip")
+local Tab1Section = Tab1:NewSection("Toggle")
+
+
+Tab1Section:NewButton("On", "Turns on NoClip", function()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "HEY!";
+                Text = "Your noclip is on!";
+                Duration = 1.5;})
+loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/on'))()
+
+end)
+
+Tab1Section:NewButton("Off", "Turns off NoClip", function()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "HEY!";
+                Text = "Your noclip is off!";
+                Duration = 1.5;})
+loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/off'))()
+
+end)
