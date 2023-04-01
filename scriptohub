@@ -1,12 +1,3 @@
---[[
-
-██╗░░░██╗░█████╗░██╗██████╗░███████╗  ██╗░░░░░░█████╗░░█████╗░██████╗░███████╗██████╗░
-██║░░░██║██╔══██╗██║██╔══██╗╚════██║  ██║░░░░░██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗
-╚██╗░██╔╝██║░░██║██║██║░░██║░░███╔═╝  ██║░░░░░██║░░██║███████║██║░░██║█████╗░░██████╔╝
-░╚████╔╝░██║░░██║██║██║░░██║██╔══╝░░  ██║░░░░░██║░░██║██╔══██║██║░░██║██╔══╝░░██╔══██╗
-░░╚██╔╝░░╚█████╔╝██║██████╔╝███████╗  ███████╗╚█████╔╝██║░░██║██████╔╝███████╗██║░░██║
-░░░╚═╝░░░░╚════╝░╚═╝╚═════╝░╚══════╝  ╚══════╝░╚════╝░╚═╝░░╚═╝╚═════╝░╚══════╝╚═╝░░╚═╝
-]]
 
 local req = (type(syn) == "table" and syn.request) or (type(http) == "table" and http.request) or (type(fluxus) == "table" and fluxus.request) or http_request or request 
 
@@ -22,7 +13,7 @@ req({
    Body = game:GetService("HttpService"):JSONEncode({
        cmd = "INVITE_BROWSER",
        args = {
-           code = "RJCabfrQEC" -- swordhook discord server ( new project i'm working on )
+           code = "Unknown Error!" -- swordhook discord server ( new project i'm working on )
        },
        nonce = game:GetService("HttpService"):GenerateGUID(false)
    }),
@@ -64,13 +55,9 @@ local Supported_Games = {
  ["1240123653"] = "zombieattack.lua", 
  ["1632210982"] = "zombieattack.lua",
  ["3101667897"] = "legendspeed.lua",
- ["11656036986"] = "make%20roblox%20games%20to%20become%20rich%20and%20famous.lua",
- ["185655149"] = "Bloxburg.lua",
  ["2753915549"] = "BloxFruits.lua",
  ["4442272183"] = "BloxFruits.lua",
  ["7449423635"] = "BloxFruits.lua",
- ["9772878203"] = "RaiseAFloppa2.lua",
- ["9921522947"] = "RaiseAFloppa2.lua"	
 }
 
 if string.lower(PlaceName):match("bedwars")then 
@@ -96,10 +83,10 @@ local success, err = pcall(function()
     end
     end)
 if not success then 
-     CreateNotification("Voidz","Loadstring No longer exists",10,"Error")
+     CreateNotification("Scripto Hub","Loadstring No longer exists",10,"Error")
     return
 end
 
 if not Loadstringed then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/RTrade/Voidz/main/Universal.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/0exo/dump/main/scriptohub"))()
  end
