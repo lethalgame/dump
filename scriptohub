@@ -1,0 +1,105 @@
+--[[
+
+██╗░░░██╗░█████╗░██╗██████╗░███████╗  ██╗░░░░░░█████╗░░█████╗░██████╗░███████╗██████╗░
+██║░░░██║██╔══██╗██║██╔══██╗╚════██║  ██║░░░░░██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗
+╚██╗░██╔╝██║░░██║██║██║░░██║░░███╔═╝  ██║░░░░░██║░░██║███████║██║░░██║█████╗░░██████╔╝
+░╚████╔╝░██║░░██║██║██║░░██║██╔══╝░░  ██║░░░░░██║░░██║██╔══██║██║░░██║██╔══╝░░██╔══██╗
+░░╚██╔╝░░╚█████╔╝██║██████╔╝███████╗  ███████╗╚█████╔╝██║░░██║██████╔╝███████╗██║░░██║
+░░░╚═╝░░░░╚════╝░╚═╝╚═════╝░╚══════╝  ╚══════╝░╚════╝░╚═╝░░╚═╝╚═════╝░╚══════╝╚═╝░░╚═╝
+]]
+
+local req = (type(syn) == "table" and syn.request) or (type(http) == "table" and http.request) or (type(fluxus) == "table" and fluxus.request) or http_request or request 
+
+if req~=nil then
+pcall(function()
+req({
+   Url = "http://127.0.0.1:6463/rpc?v=1",
+   Method = "POST",
+   Headers = {
+       ["Content-Type"] = "application/json",
+       ["Origin"] = "https://discord.com"
+   },
+   Body = game:GetService("HttpService"):JSONEncode({
+       cmd = "INVITE_BROWSER",
+       args = {
+           code = "RJCabfrQEC" -- swordhook discord server ( new project i'm working on )
+       },
+       nonce = game:GetService("HttpService"):GenerateGUID(false)
+   }),
+})
+end)
+end
+
+
+local Orion = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local PlaceId = game.PlaceId
+local PlaceName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+local Loadstringed = false
+function CreateNotification(Name,Content,Time,Purpose)
+  if Purpose == "Notify" then
+   Orion:MakeNotification({
+        Name = Name,
+        Content = Content,
+        Time = tonumber(Time)
+    })
+    elseif Purpose == "Error" then
+   ContentError = "Error [ "..Content.." ]"
+       Orion:MakeNotification({
+        Name = Name,
+        Content = ContentError,
+        Time = tonumber(Time)
+    })
+    end
+  end
+if not getgenv then
+	CreateNotification("Scripto Hub","Your Executor Does not support some commands we need!",5,"Notify")
+end
+local Supported_Games = {
+ ["137885680"] = "zombierush.lua",
+ ["4301323950"] = "zombierush.lua",
+ ["155615604"] = "prisonlife.lua",
+ ["621129760"] = "kat.lua",
+ ["286090429"] = "arsenal.lua",
+ ["4003872968"] = "giantsurvival.lua",
+ ["1240123653"] = "zombieattack.lua", 
+ ["1632210982"] = "zombieattack.lua",
+ ["3101667897"] = "legendspeed.lua",
+ ["11656036986"] = "make%20roblox%20games%20to%20become%20rich%20and%20famous.lua",
+ ["185655149"] = "Bloxburg.lua",
+ ["2753915549"] = "BloxFruits.lua",
+ ["4442272183"] = "BloxFruits.lua",
+ ["7449423635"] = "BloxFruits.lua",
+ ["9772878203"] = "RaiseAFloppa2.lua",
+ ["9921522947"] = "RaiseAFloppa2.lua"	
+}
+
+if string.lower(PlaceName):match("bedwars")then 
+    Loadstringed = true
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/RTrade/Voidz/main/Main/Bedwars.lua'))()
+    end
+local success, err = pcall(function()
+    for gameid,gamefile in pairs(Supported_Games) do
+		if game.PlaceId == tonumber(gameid)and not Loadstringed then
+       Loadstringed = true
+       local suc,err = pcall(function()
+						        Loadstringed = true
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/RTrade/Voidz/main/'..gamefile))()
+			end)
+	if not suc then
+		pcall(function()
+							Loadstringed = true
+				  loadstring(game:HttpGet('https://raw.githubusercontent.com/RTrade/Voidz/main/Main/'..gamefile))()
+				end)
+		end
+ 
+        end
+    end
+    end)
+if not success then 
+     CreateNotification("Voidz","Loadstring No longer exists",10,"Error")
+    return
+end
+
+if not Loadstringed then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RTrade/Voidz/main/Universal.lua"))()
+ end
