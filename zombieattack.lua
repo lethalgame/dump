@@ -1,120 +1,57 @@
---[[
-
-██╗░░░██╗░█████╗░██╗██████╗░███████╗  ██╗░░░░░░█████╗░░█████╗░██████╗░███████╗██████╗░
-██║░░░██║██╔══██╗██║██╔══██╗╚════██║  ██║░░░░░██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗
-╚██╗░██╔╝██║░░██║██║██║░░██║░░███╔═╝  ██║░░░░░██║░░██║███████║██║░░██║█████╗░░██████╔╝
-░╚████╔╝░██║░░██║██║██║░░██║██╔══╝░░  ██║░░░░░██║░░██║██╔══██║██║░░██║██╔══╝░░██╔══██╗
-░░╚██╔╝░░╚█████╔╝██║██████╔╝███████╗  ███████╗╚█████╔╝██║░░██║██████╔╝███████╗██║░░██║
-░░░╚═╝░░░░╚════╝░╚═╝╚═════╝░╚══════╝  ╚══════╝░╚════╝░╚═╝░░╚═╝╚═════╝░╚══════╝╚═╝░░╚═╝
-]]
-
-local req = (type(syn) == "table" and syn.request) or (type(http) == "table" and http.request) or (type(fluxus) == "table" and fluxus.request) or http_request or request 
-
-if req~=nil then
-pcall(function()
-req({
-   Url = "http://127.0.0.1:6463/rpc?v=1",
-   Method = "POST",
-   Headers = {
-       ["Content-Type"] = "application/json",
-       ["Origin"] = "https://discord.com"
-   },
-   Body = game:GetService("HttpService"):JSONEncode({
-       cmd = "INVITE_BROWSER",
-       args = {
-           code = "RJCabfrQEC" -- swordhook discord server ( new project i'm working on )
-       },
-       nonce = game:GetService("HttpService"):GenerateGUID(false)
-   }),
-})
+-- Equilibrium Special Zombie_Attack Auto_Farming Enjoy Heart
+local groundDistance = 8
+local Player = game:GetService("Players").LocalPlayer
+local function getNearest()
+local nearest, dist = nil, 99999
+for _,v in pairs(game.Workspace.BossFolder:GetChildren()) do
+if(v:FindFirstChild("Head")~=nil)then
+local m =(Player.Character.Head.Position-v.Head.Position).magnitude
+if(m<dist)then
+dist = m
+nearest = v
+end
+end
+end
+for _,v in pairs(game.Workspace.enemies:GetChildren()) do
+if(v:FindFirstChild("Head")~=nil)then
+local m =(Player.Character.Head.Position-v.Head.Position).magnitude
+if(m<dist)then
+dist = m
+nearest = v
+end
+end
+end
+return nearest
+end
+_G.farm2 = true
+Player.Chatted:Connect(function(m)
+if(m==";autofarm false")then
+_G.farm2 = false
+elseif(m==";autofarm true")then
+_G.farm2 = true
+end
 end)
+_G.globalTarget = nil
+game:GetService("RunService").RenderStepped:Connect(function()
+if(_G.farm2==true)then
+local target = getNearest()
+if(target~=nil)then
+game:GetService("Workspace").CurrentCamera.CFrame = CFrame.new(game:GetService("Workspace").CurrentCamera.CFrame.p, target.Head.Position)
+Player.Character.HumanoidRootPart.CFrame = (target.HumanoidRootPart.CFrame * CFrame.new(0, groundDistance, 9))
+_G.globalTarget = target
 end
-
-
-local Orion = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local PlaceId = game.PlaceId
-local PlaceName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
-local Loadstringed = false
-function CreateNotification(Name,Content,Time,Purpose)
-  if Purpose == "Notify" then
-   Orion:MakeNotification({
-        Name = Name,
-        Content = Content,
-        Time = tonumber(Time)
-    })
-    elseif Purpose == "Error" then
-   ContentError = "Error [ "..Content.." ]"
-       Orion:MakeNotification({
-        Name = Name,
-        Content = ContentError,
-        Time = tonumber(Time)
-    })
-    end
-  end
-if not getgenv then
-	CreateNotification("Voidz","Your Executor Does not support some commands we need!",5,"Notify")
 end
-local Supported_Games = {
- ["6839171747"] = "DoorsLoader.lua",
- ["6516141723"] = "DoorsLoader.lua",
- ["4282985734"] = "Combat%20Warriors.lua",
- ["155615604"] = "PrisonLife.lua",
- ["8888615802"] = "RainbowFriends.lua",
- ["7991339063"] = "RainbowFriends.lua",
- ["2653064683"] = "WordBomb.lua",
- ["537413528"] = "BuildABoatForTreasure.lua",
- ["621129760"] = "KAT.lua",
- ["286090429"] = "Arsenal.lua",
- ["379614936"] = "Assassin.lua",
- ["4003872968"] = "Giant%20Survival.lua",
- ["1240123653"] = "Zombie%20Attack.lua",  
- ["9872472334"] = "Evade.lua",
- ["10662542523"] = "Evade.lua",
- ["10324347967"] = "Evade.lua",
- ["10324346056"] = "Evade.lua",
- ["110539706691"] = "Evade.lua",
- ["10808838353"] = "Evade.lua",
- ["3101667897"] = "LegendsOfSpeed.lua",
- ["6990464163"] = "Combat-Mayhem.lua",
- ["11656036986"] = "make%20roblox%20games%20to%20become%20rich%20and%20famous.lua",
- ["185655149"] = "Bloxburg.lua",
- ["6229116934"] = "HOOPZ.lua",
- ["7221355866"] = "HOOPZ.lua",
- ["164051105"] = "Super%20Bomb%20Survival.lua",
- ["2753915549"] = "BloxFruits.lua",
- ["4442272183"] = "BloxFruits.lua",
- ["7449423635"] = "BloxFruits.lua",
- ["9772878203"] = "RaiseAFloppa2.lua",
- ["9921522947"] = "RaiseAFloppa2.lua"	
-}
-
-if string.lower(PlaceName):match("bedwars")then 
-    Loadstringed = true
-     loadstring(game:HttpGet('https://raw.githubusercontent.com/RTrade/Voidz/main/Main/Bedwars.lua'))()
-    end
-local success, err = pcall(function()
-    for gameid,gamefile in pairs(Supported_Games) do
-		if game.PlaceId == tonumber(gameid)and not Loadstringed then
-       Loadstringed = true
-       local suc,err = pcall(function()
-						        Loadstringed = true
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/RTrade/Voidz/main/'..gamefile))()
-			end)
-	if not suc then
-		pcall(function()
-							Loadstringed = true
-				  loadstring(game:HttpGet('https://raw.githubusercontent.com/RTrade/Voidz/main/Main/'..gamefile))()
-				end)
-		end
- 
-        end
-    end
-    end)
-if not success then 
-     CreateNotification("Voidz","Loadstring No longer exists",10,"Error")
-    return
+end)
+spawn(function()
+while wait() do
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(0,0,0)
+game.Players.LocalPlayer.Character.Torso.Velocity = Vector3.new(0,0,0)
 end
-
-if not Loadstringed then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/RTrade/Voidz/main/Universal.lua"))()
- end
+end)
+while wait() do
+if(_G.farm2==true and _G.globalTarget~=nil and _G.globalTarget:FindFirstChild("Head") and Player.Character:FindFirstChildOfClass("Tool"))then
+local target = _G.globalTarget
+game.ReplicatedStorage.Gun:FireServer({["Normal"] = Vector3.new(0, 0, 0), ["Direction"] = target.Head.Position, ["Name"] = Player.Character:FindFirstChildOfClass("Tool").Name, ["Hit"] = target.Head, ["Origin"] = target.Head.Position, ["Pos"] = target.Head.Position,})
+wait()
+end
+end
