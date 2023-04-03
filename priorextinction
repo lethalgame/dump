@@ -1,0 +1,39 @@
+
+local TinyTanksCheatGuiByLeviTheOtaku = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local FastTankButton = Instance.new("TextButton")
+local InfFireRateButton = Instance.new("TextButton")
+local NoReloadButton = Instance.new("TextButton")
+local InfSpecialAmmoButton = Instance.new("TextButton")
+local NoAbilityCooldown = Instance.new("TextButton")
+
+TinyTanksCheatGuiByLeviTheOtaku.Name = "TinyTanksCheatGuiByLeviTheOtaku"
+TinyTanksCheatGuiByLeviTheOtaku.Parent = game.CoreGui
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = TinyTanksCheatGuiByLeviTheOtaku
+MainFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+MainFrame.BorderColor3 = Color3.new(1, 1, 1)
+MainFrame.BorderSizePixel = 3
+MainFrame.Position = UDim2.new(0.699999988, 0, 0.949999988, 0)
+MainFrame.Size = UDim2.new(0.200000003, 0, 0.0500000007, 0)
+
+GuiButton.Name = "GuiButton"
+GuiButton.Parent = MainFrame
+GuiButton.BackgroundColor3 = Color3.new(1, 1, 1)
+GuiButton.BackgroundTransparency = 0.5
+GuiButton.BorderSizePixel = 0
+GuiButton.Position = UDim2.new(0, 0, 0.100000001, 0)
+GuiButton.Size = UDim2.new(0.200000003, 0, 0.800000012, 0)
+GuiButton.Font = Enum.Font.Highway
+GuiButton.FontSize = Enum.FontSize.Size14
+GuiButton.Text = "Prior Extinction GUI"
+GuiButton.TextColor3 = Color3.new(1, 1, 1)
+GuiButton.TextSize = 14
+GuiButton.TextWrapped = true
+
+GuiButton.MouseButton1Down:connect(function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0exo/gui/main/vghub", true))()
+
+end)
