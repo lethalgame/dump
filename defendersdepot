@@ -1,0 +1,79 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Defender's Depot - Tower Defense", HidePremium = false, SaveConfig = false})
+
+OrionLib:MakeNotification({
+	Name = "Successful upload!",
+	Content = "You have successfully downloaded script!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Defender's Depot - Tower Defense"
+})
+
+Tab:AddButton({
+	Name = "Tp to Base",
+	Callback = function()
+
+    local basesList = {"Red", "Purple", "Green", "Blue", "Orange", "Yellow"}
+    
+    local player = game.Players.LocalPlayer
+    
+    for i, baseName in ipairs(basesList) do
+        local base = workspace.Bases[baseName]
+        if base.Owner.Value == tostring(player) then
+            local startPos = base:FindFirstChild("StartPos")
+            if startPos then
+                player.Character:MoveTo(startPos.Position)
+                break
+            end
+        end
+    end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Tp to Crate",
+	Callback = function()
+
+        local crates = workspace:GetDescendants()
+    for i, crate in ipairs(crates) do
+        if crate:IsA("MeshPart") and crate.Name == "Crate" then
+            local teleportPosition = crate.Position + Vector3.new(0, crate.Size.Y/2, 0)
+            game.Players.LocalPlayer.Character:MoveTo(teleportPosition)
+        end
+    end
+
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Gamepass",
+	Icon = "rbxassetid://6031289461",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Gamepasses"
+})
+
+Tab:AddButton({
+	Name = "Get All Gamepasses",
+	Callback = function()
+    game:GetService("Players").LocalPlayer:WaitForChild("Info"):WaitForChild("Gamepasses"):WaitForChild("VIP").Value = true
+    game:GetService("Players").LocalPlayer:WaitForChild("Info"):WaitForChild("Gamepasses"):WaitForChild("DoubleDamage").Value = true
+    game:GetService("Players").LocalPlayer:WaitForChild("Info"):WaitForChild("Gamepasses"):WaitForChild("Wave").Value = true
+    game:GetService("Players").LocalPlayer:WaitForChild("Info"):WaitForChild("Gamepasses"):WaitForChild("Auto").Value = true
+    game:GetService("Players").LocalPlayer:WaitForChild("Info"):WaitForChild("Gamepasses"):WaitForChild("BoomBox").Value = true
+    game:GetService("Players").LocalPlayer:WaitForChild("Info"):WaitForChild("Gamepasses"):WaitForChild("Shiny").Value = true
+    game:GetService("Players").LocalPlayer:WaitForChild("Info"):WaitForChild("Gamepasses"):WaitForChild("Fast").Value = true
+    end    
+})
