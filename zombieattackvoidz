@@ -68,6 +68,7 @@ local Supported_Games = {
  ["379614936"] = "Assassin.lua",
  ["4003872968"] = "Giant%20Survival.lua",
  ["1240123653"] = "Zombie%20Attack.lua",  
+ ["1632210982"] = "Zombie%20Attack.lua",  
  ["9872472334"] = "Evade.lua",
  ["10662542523"] = "Evade.lua",
  ["10324347967"] = "Evade.lua",
