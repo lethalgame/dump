@@ -24,5 +24,3 @@ while true do
            workspace.Events.DataStores.uhoh:FireServer("mine",v)
        end
    end
-
-   gam
