@@ -1,0 +1,3 @@
+--Key = FunTroll or https://pastebin.com/raw/79REsaXv
+
+loadstring(game:HttpGet('https://pastebin.com/raw/nG0yZs3Z'))()
