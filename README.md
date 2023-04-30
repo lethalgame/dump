@@ -46,14 +46,6 @@ Friday Night Funking
 
 Works in any game! ```loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()```
 
-# Soggyware
-Script for a lot of games
-```loadstring(game:HttpGet('https://raw.githubusercontent.com/0exo/0exo/main/soggyware'))()```
-
-How to get key : https://soggy-ware.cf/assets/js/key.js
-
-How to find key : In the second line of code, copy the link in quotes.
-
 # V.G. Hub
 Script for almost any game
 ```loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()```
