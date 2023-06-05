@@ -8,6 +8,8 @@
   
   
 ]]
+
+
 local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))() 
 TDS:Loadout("Ace Pilot", "Freezer", "Military Base", "nil", "nil") 
 TDS:Map("Wrecked Battlefield", true, "Hardcore")
