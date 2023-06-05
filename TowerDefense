@@ -91,4 +91,4 @@ TDS:Skip(21, 0, 40)
 TDS:Sell(10, 22, 1, 14)
 TDS:Sell(9, 22, 1, 11)
 TDS:Skip(22, 0, 53)
-getgenv().StratCreditsAuthor = {"Boss of this GYM#5651"}
+getgenv().StratCreditsAuthor = {"Owner: GYM#5651"}
